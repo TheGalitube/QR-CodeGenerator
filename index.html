@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        
+        <div class="input-section">
+            <select id="qr-type">
+                <option value="text">Text</option>
+                <option value="url">URL</option>
+                <option value="wifi">WLAN</option>
+            </select>
+
+            <!-- Text/URL Input -->
+            <div id="text-input" class="input-group">
+                <input type="text" id="qr-text" placeholder="Text oder URL eingeben">
+            </div>
+
+            <!-- WiFi Input -->
+            <div id="wifi-input" class="input-group hidden">
+                <input type="text" id="wifi-ssid" placeholder="WLAN-Name (SSID)">
+                <input type="password" id="wifi-password" placeholder="WLAN-Passwort">
+                <select id="wifi-encryption">
+                    <option value="WPA">WPA/WPA2</option>
+                    <option value="WEP">WEP</option>
+                    <option value="nopass">Keine Verschlüsselung</option>
+                </select>
+            </div>
+
+            <button id="generate-btn">QR Code generieren</button>
+        </div>
+
+        <div class="qr-output">
+            <div id="qr-code"></div>
+            <button id="download-btn" class="hidden">QR Code herunterladen</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
