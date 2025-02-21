@@ -24,4 +24,4 @@ Ein einfacher QR-Code-Generator, der es Benutzern ermöglicht, QR-Codes für Tex
 
 ## Lizenz
 
-Dieses Projekt ist unter der MIT-Lizenz lizenziert.
+Dieses Projekt ist unter der MIT-Lizenz lizenziert. 
